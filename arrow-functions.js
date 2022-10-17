@@ -5,10 +5,43 @@
 
 // Vanilla JavaScript Function
 
+function addTwoNumbers(a, b) {
+    //code block, this will happen when u call addTwoNumbers
+    return a + b;
+}
+
+let sum = addTwoNumbers(3, 5);
+console.log(sum);
+
 // Arrow Function With Parameters
+
+const addTwoNumbers2 = (a, b) => {
+    //code block, this will happen when u call addTwoNumbers
+    return a + b;
+}
+
+let num = addTwoNumbers2(2, 5);
+console.log(num);
 
 // Single Line Arrow Function With Parameters
 
+const addTwoNumbers3 = (a, b) => a + b;
+let sum2 = addTwoNumbers3(4, 6);
+console.log(sum2);
+
 // Implicit Returns
 
+const saySomething = message => console.log(message);
+saySomething("Hello world!");
+
+const sayHello = () => console.log('Hello!');
+sayHello();
+
 // Returning Multiple Lines
+
+const returnMultipleLines = () => (
+    `<p>
+        This is a multiple string!
+    </p>`
+)
+console.log(returnMultipleLines());
